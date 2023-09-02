@@ -40,12 +40,13 @@ let page = 1;
         imageWrapper.appendChild(imageWrapper);
     });
 
+ 
     // if photos are more and you see more photos, then show me button is appears "show more" and see more photos each time
     page++
     if(page > 1) {
         showMore.style.display = 'block';
     }
-}
+} 
 
 // call the function for images 
 formEl.addEventListener('submit', (event) => {
@@ -58,4 +59,6 @@ showMore.addEventListener('click', () => {
     searchImages() 
 });
 
-// serves hatası veriyor 404 failded loaded source url tanımıyor
+
+
+ 
