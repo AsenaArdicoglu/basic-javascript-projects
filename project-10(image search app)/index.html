@@ -14,8 +14,8 @@
 </head>
 <body>
     <h1>Image Search App</h1>
-    <form>
-        <input type="text" id=" search-input" placeholder="search for images">
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="search for images">
         <button id="search-button" type="button">Search</button>
     </form>
 
@@ -34,7 +34,7 @@
         </div>
     </div>    
 
-    <button id="show-more-button">Show more</button>
+    <button id="show-more-button" type="submit" form="search-form">Show more</button>
 
 
 <script src="app.js"defer></script>
