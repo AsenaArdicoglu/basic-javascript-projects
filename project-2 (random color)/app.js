@@ -17,3 +17,5 @@ const generateRGBColor = () => {
 button.addEventListener('click', () => {
   document.body.style.backgroundColor = `rgb(${generateRGBColor().join(',')})`;
 });
+
+
