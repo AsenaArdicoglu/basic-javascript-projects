@@ -1,8 +1,8 @@
 const addBtn = document.querySelector('#add-btn');
 const newTaskInput = document.querySelector("#wrapper input");
 const tasksContainer = document.querySelector("#tasks");
-const error =document.querySelector("#error");
-const value = document.querySelector("#count-value");
+const error =document.getElementById("error");
+const countValue = document.querySelector(".count-value");
 
 let taskCount = 0;
 
@@ -10,13 +10,13 @@ const displayCount =  (taskCount)=> {
     countValue.innerText = taskCount;
 };
 
-const addTask = ()=> {
+const addTask = () => {
     const taskName = newTaskInput.value.trim();
     error.style.display = 'none';
     if (!taskName) {
         setTimeout(() => {
             error.style.display = 'block';
-        },200)
+        }, 200)
         return;
     }
 
@@ -85,6 +85,3 @@ window.onload = () => {
 }
 
 
-// bendeki count lar sayılmıyor ona bak
-// task yazdıktan sonraki hali hala duruyor silinmemiş oluyor ona bak
-// tik işaretim tik olarak çıkmıyor
