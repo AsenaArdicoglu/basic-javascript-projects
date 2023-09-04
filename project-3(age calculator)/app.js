@@ -12,7 +12,7 @@ var ageHour = document.getElementById('ageHours');
 var ageSeconds = document.getElementById('ageSeconds');
 var ageMilliSeconds = document.getElementById('ageMiliSeconds');
 
-datePicker.addEventListener('change', function() {
+datePicker.addEventListener('change', function () {
     // alert(this.value); check it work
     var options = {year: 'numeric', month: 'long', day: 'numeric'};
     var selectedDate = new Date(this.value);
